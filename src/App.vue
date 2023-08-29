@@ -7,9 +7,10 @@
       >
         <v-list>
           <v-list-item
-              prepend-avatar="@/profilePictures/minsk.jpg"
-              title="Alexandr Novoseltsev"
-              subtitle="novoseltsev7g21@icloud.com"
+              v-for="user in users"
+              :prepend-avatar="user.profilePicture"
+              :title="user.name"
+              :subtitle="user.email"
           ></v-list-item>
         </v-list>
 
@@ -33,7 +34,7 @@ export default {
     return{
       users: [
         {id: 1,name: "Alexander", email:"novoseltsev7g21@gmail.com", profilePicture: require('@/profilePictures/minsk.jpg')},
-        {id: 1,name: "Aramarik", email:"sacha.sar@yandex.ru", profilePicture: require('@/profilePictures/moon.jpg')}
+        //{id: 1,name: "Aramarik", email:"sacha.sar@yandex.ru", profilePicture: require('@/profilePictures/moon.jpg')}
       ]
     }
 },
