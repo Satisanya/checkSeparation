@@ -23,7 +23,7 @@
         </v-list>
       </v-navigation-drawer>
 
-      <v-main style="height: max-content">
+      <v-main style="height: auto; border: none">
         <Main></Main>
       </v-main>
     </v-layout>
